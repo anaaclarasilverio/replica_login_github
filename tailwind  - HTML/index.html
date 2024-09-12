@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site Simples com Tailwind</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="tailwind.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+  <main class="mx-6 flex-1">
+    <h2 class="mt-28 flex justify-center text-4xl mb-4">Sign in to GitHub</h2>
+    <div class="flex justify-around flex-col items-center justify-center flex-wrap">
+      <div class="p-2 flex flex-col justify-center w-80 items-center rounded border-2 border-gray-300">
+        <div class="mb-4 w-full">
+          <h3 class="mt-2">Username or email address</h3>
+          <input id="input-username" type="text"
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+        </div>
+
+        <div class="mb-4 w-full">
+          <div class="flex items-center justify-between">
+            <h3 class="mt-2">Password</h3>
+            <a href="#" class="text-blue-500 hover:underline text-sm">Forgot password?</a>
+          </div>
+          <input id="input-password" type="password"
+            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+        </div>
+
+        <div class="mb-4 w-full">
+          <button
+            class="mt-4 block w-full px-3 py-2 bg-green-500 text-white rounded-md shadow-sm hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 text-sm font-semibold">
+            Sign in
+          </button>
+        </div>
+      </div>
+      <div class="p-2 flex flex-col justify-center w-80 items-center mt-8  rounded border-2 border-gray-300">
+        <div class="mb-1 w-full text-center">
+          <a href="#" class="text-blue-500 hover:underline text-sm">Sign in with a passkey</a>
+        </div>
+
+        <div class="mt-4 w-full text-center">
+          <p class="text-sm text-gray-700">New to GitHub? <a href="#" class="text-blue-500 hover:underline">Create an
+              account</a></p>
+        </div>
+      </div>
+  </main>
+</body>
+
+</html>
